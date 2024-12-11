@@ -1,0 +1,227 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: £gVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Liu Frank, selfuse, LIC=9WSKC-79NWR-8TS3P-M5NUT-39TMX-UBGUC
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.1.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\User\Desktop\STM32\example_for_HAL\practice\MDK-ARM\practice.uvprojx
+Project File Date:  11/26/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'practice'
+../Core/Src/main.c(29): error: 'ff.h' file not found
+#include "ff.h"
+         ^~~~~~
+1 error generated.
+compiling main.c...
+compiling stm32f1xx_hal_spi.c...
+compiling usart.c...
+compiling dma.c...
+compiling stm32f1xx_hal_msp.c...
+compiling gpio.c...
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling stm32f1xx_it.c...
+compiling sdio.c...
+compiling fsmc.c...
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_ll_fsmc.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal_rcc.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal_flash.c...
+compiling stm32f1xx_hal_exti.c...
+compiling stm32f1xx_hal_dma.c...
+compiling stm32f1xx_hal_flash_ex.c...
+compiling stm32f1xx_hal_tim_ex.c...
+compiling stm32f1xx_hal_tim.c...
+compiling stm32f1xx_hal_sram.c...
+../../../STM32F1_BSP/src/delay.c(1): error: 'delay.h' file not found
+#include "delay.h"
+         ^~~~~~~~~
+1 error generated.
+compiling delay.c...
+../../../STM32F1_BSP/src/sys.c(1): error: 'sys.h' file not found
+#include "sys.h"
+         ^~~~~~~
+1 error generated.
+compiling sys.c...
+compiling system_stm32f1xx.c...
+compiling stm32f1xx_ll_sdmmc.c...
+../../../STM32F1_BSP/src/bsp_usart.c(1): error: 'sys.h' file not found
+#include "sys.h"
+         ^~~~~~~
+1 error generated.
+compiling bsp_usart.c...
+../../../STM32F1_BSP/package/LCD-FSMC/LCD_FSMC.c(1): warning: In file included from...
+../../../STM32F1_BSP/package/LCD-FSMC/LCD_FSMC.h(7): error: 'delay.h' file not found
+#include "delay.h"      
+         ^~~~~~~~~
+1 error generated.
+compiling LCD_FSMC.c...
+../../../STM32F1_BSP/package/bsp_sccb/bsp_sccb.c(1): warning: In file included from...
+../../../STM32F1_BSP/package/bsp_sccb/bsp_sccb.h(5): error: 'sys.h' file not found
+#include "sys.h"
+         ^~~~~~~
+1 error generated.
+compiling bsp_sccb.c...
+../../../STM32F1_BSP/package/bsp_malloc/bsp_malloc.c(4): error: expected parameter declarator
+__align(32) uint8_t Exram_Base[EXSRAM_MAX_SIZE] __attribute__ ((at (0X68000000)));
+        ^
+../../../STM32F1_BSP/package/bsp_malloc/bsp_malloc.c(4): error: expected ')'
+../../../STM32F1_BSP/package/bsp_malloc/bsp_malloc.c(4): note: to match this '('
+__align(32) uint8_t Exram_Base[EXSRAM_MAX_SIZE] __attribute__ ((at (0X68000000)));
+       ^
+../../../STM32F1_BSP/package/bsp_malloc/bsp_malloc.c(4): error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+__align(32) uint8_t Exram_Base[EXSRAM_MAX_SIZE] __attribute__ ((at (0X68000000)));
+^
+int
+../../../STM32F1_BSP/package/bsp_malloc/bsp_malloc.c(4): error: expected ';' after top level declarator
+__align(32) uint8_t Exram_Base[EXSRAM_MAX_SIZE] __attribute__ ((at (0X68000000)));
+           ^
+           ;
+../../../STM32F1_BSP/package/bsp_malloc/bsp_malloc.c(4): warning: unknown attribute 'at' ignored [-Wunknown-attributes]
+__align(32) uint8_t Exram_Base[EXSRAM_MAX_SIZE] __attribute__ ((at (0X68000000)));
+                                                                ^~~~~~~~~~~~~~~
+../../../STM32F1_BSP/package/bsp_malloc/bsp_malloc.c(5): warning: unknown attribute 'at' ignored [-Wunknown-attributes]
+uint16_t Exram_StateTable[EXSRAM_NumOfTable] __attribute__ ((at (0X68000000+EXSRAM_MAX_SIZE)));
+                                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings and 4 errors generated.
+compiling bsp_malloc.c...
+compiling bsp_sdio_sd.c...
+../../../STM32F1_BSP/package/w25qxx/bsp_flash_w25q.c(1): warning: In file included from...
+../../../STM32F1_BSP/package/w25qxx/bsp_flash_w25q.h(63): error: unknown type name 'SPI_HandleTypeDef'; did you mean 'SD_HandleTypeDef'?
+extern SPI_HandleTypeDef w25q_spi;
+       ^~~~~~~~~~~~~~~~~
+       SD_HandleTypeDef
+../Drivers/STM32F1xx_HAL_Driver/Inc\stm32f1xx_hal_sd.h(159): note: 'SD_HandleTypeDef' declared here
+}SD_HandleTypeDef;
+ ^
+../../../STM32F1_BSP/package/w25qxx/bsp_flash_w25q.c(6): error: unknown type name 'SPI_HandleTypeDef'; did you mean 'SD_HandleTypeDef'?
+SPI_HandleTypeDef w25q_spi;
+^~~~~~~~~~~~~~~~~
+SD_HandleTypeDef
+../Drivers/STM32F1xx_HAL_Driver/Inc\stm32f1xx_hal_sd.h(159): note: 'SD_HandleTypeDef' declared here
+}SD_HandleTypeDef;
+ ^
+../../../STM32F1_BSP/package/w25qxx/bsp_flash_w25q.c(39): warning: incompatible pointer types assigning to 'SDIO_TypeDef *' from 'SPI_TypeDef *' [-Wincompatible-pointer-types]
+        w25q_spi.Instance = W25Q_SPIx;
+                          ^ ~~~~~~~~~
+../../../STM32F1_BSP/package/w25qxx/bsp_flash_w25q.c(40): error: no member named 'Mode' in 'SDIO_InitTypeDef'
+  w25q_spi.Init.Mode = SPI_MODE_MASTER;
+  ~~~~~~~~~~~~~ ^
+../../../STM32F1_BSP/package/w25qxx/bsp_flash_w25q.c(40): error: use of undeclared identifier 'SPI_MODE_MASTER'
+  w25q_spi.Init.Mode = SPI_MODE_MASTER;
+                       ^
+../../../STM32F1_BSP/package/w25qxx/bsp_flash_w25q.c(41): error: no member named 'Direction' in 'SDIO_InitTypeDef'
+  w25q_spi.Init.Direction = SPI_DIRECTION_2LINES;
+  ~~~~~~~~~~~~~ ^
+../../../STM32F1_BSP/package/w25qxx/bsp_flash_w25q.c(41): error: use of undeclared identifier 'SPI_DIRECTION_2LINES'
+  w25q_spi.Init.Direction = SPI_DIRECTION_2LINES;
+                            ^
+../../../STM32F1_BSP/package/w25qxx/bsp_flash_w25q.c(42): error: no member named 'DataSize' in 'SDIO_InitTypeDef'
+  w25q_spi.Init.DataSize = SPI_DATASIZE_8BIT;
+  ~~~~~~~~~~~~~ ^
+../../../STM32F1_BSP/package/w25qxx/bsp_flash_w25q.c(42): error: use of undeclared identifier 'SPI_DATASIZE_8BIT'
+  w25q_spi.Init.DataSize = SPI_DATASIZE_8BIT;
+                           ^
+../../../STM32F1_BSP/package/w25qxx/bsp_flash_w25q.c(43): error: no member named 'CLKPolarity' in 'SDIO_InitTypeDef'
+  w25q_spi.Init.CLKPolarity = SPI_POLARITY_HIGH;
+  ~~~~~~~~~~~~~ ^
+../../../STM32F1_BSP/package/w25qxx/bsp_flash_w25q.c(43): error: use of undeclared identifier 'SPI_POLARITY_HIGH'
+  w25q_spi.Init.CLKPolarity = SPI_POLARITY_HIGH;
+                              ^
+../../../STM32F1_BSP/package/w25qxx/bsp_flash_w25q.c(44): error: no member named 'CLKPhase' in 'SDIO_InitTypeDef'
+  w25q_spi.Init.CLKPhase = SPI_PHASE_2EDGE;
+  ~~~~~~~~~~~~~ ^
+../../../STM32F1_BSP/package/w25qxx/bsp_flash_w25q.c(44): error: use of undeclared identifier 'SPI_PHASE_2EDGE'
+  w25q_spi.Init.CLKPhase = SPI_PHASE_2EDGE;
+                           ^
+../../../STM32F1_BSP/package/w25qxx/bsp_flash_w25q.c(45): error: no member named 'NSS' in 'SDIO_InitTypeDef'
+  w25q_spi.Init.NSS = SPI_NSS_SOFT;
+  ~~~~~~~~~~~~~ ^
+../../../STM32F1_BSP/package/w25qxx/bsp_flash_w25q.c(45): error: use of undeclared identifier 'SPI_NSS_SOFT'
+  w25q_spi.Init.NSS = SPI_NSS_SOFT;
+                      ^
+../../../STM32F1_BSP/package/w25qxx/bsp_flash_w25q.c(46): error: no member named 'BaudRatePrescaler' in 'SDIO_InitTypeDef'
+  w25q_spi.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_256;
+  ~~~~~~~~~~~~~ ^
+../../../STM32F1_BSP/package/w25qxx/bsp_flash_w25q.c(46): error: use of undeclared identifier 'SPI_BAUDRATEPRESCALER_256'
+  w25q_spi.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_256;
+                                    ^
+../../../STM32F1_BSP/package/w25qxx/bsp_flash_w25q.c(47): error: no member named 'FirstBit' in 'SDIO_InitTypeDef'
+  w25q_spi.Init.FirstBit = SPI_FIRSTBIT_MSB;
+  ~~~~~~~~~~~~~ ^
+../../../STM32F1_BSP/package/w25qxx/bsp_flash_w25q.c(47): error: use of undeclared identifier 'SPI_FIRSTBIT_MSB'
+  w25q_spi.Init.FirstBit = SPI_FIRSTBIT_MSB;
+                           ^
+../../../STM32F1_BSP/package/w25qxx/bsp_flash_w25q.c(48): error: no member named 'TIMode' in 'SDIO_InitTypeDef'
+  w25q_spi.Init.TIMode = SPI_TIMODE_DISABLE;
+  ~~~~~~~~~~~~~ ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+1 warning and 20 errors generated.
+compiling bsp_flash_w25q.c...
+../FatFS/ff14b/source/diskio.c(12): error: 'bsp_sdio_sd.h' file not found
+#include "bsp_sdio_sd.h"
+         ^~~~~~~~~~~~~~~
+1 error generated.
+compiling diskio.c...
+compiling stm32f1xx_hal_sd.c...
+../../../STM32F1_BSP/package/bsp_ov7725/bsp_ov7725.c(1): warning: In file included from...
+../../../STM32F1_BSP/package/bsp_ov7725/bsp_ov7725.h(6): error: 'sys.h' file not found
+#include "sys.h"
+         ^~~~~~~
+1 error generated.
+compiling bsp_ov7725.c...
+compiling ffsystem.c...
+compiling stm32f1xx_hal_uart.c...
+compiling ffunicode.c...
+compiling ff.c...
+".\practice\practice.axf" - 31 Error(s), 3 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil.STM32F1xx_DFP.2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_practice
+  C:/Users/User/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/User/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Target not created.
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
